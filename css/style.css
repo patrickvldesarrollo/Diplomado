@@ -61,13 +61,19 @@ header nav li:hover {
 }
 /****/
 /*Estilo cuerpo INDEX*/
-#home-white{
-    min-height: auto;
+.home-white{
+    min-height: 500px;
     background-color: rgb(255, 255, 255);
 }
-#home-black{
-    min-height: auto;
+.home-black{
+    min-height: 500px;
     background-color: rgb(175, 175, 175);
+}
+#home-header{
+    /* background: url(ubicacion de la foto); 
+        Por ahora ira un color -Patrick*/
+        background: rgb(63, 63, 73);
+    min-height: 500px;
 }
 #titulo-bienvenida{
     margin-top: 150px;
@@ -108,14 +114,14 @@ main section .cuerpo-receta{
 article h1{
     text-decoration: underline;
     /*Le di tamaño porque nunca mostró el tamaño real del H1*/
-    font-size: 28px;;
+    font-size: 28px;
 }
 .margen-h3{
     margin-top: 25px;
 }
 article p{
     margin-bottom: 20px;
-    margin-top: 20px;;
+    margin-top: 20px;
 }
 article i{
     margin: 10px;
