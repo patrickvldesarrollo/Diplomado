@@ -1,0 +1,165 @@
+/*Formatear*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/**/
+/*Logo*/
+header img{
+    width: 20%;
+    height: 10%;
+    background-color: red;
+
+}
+/**/
+/*cabecera*/
+.header{
+    background-color: #302f2f;
+    color: #ffffff;
+    height: 30%;
+}
+.logo-sitio{
+    display: flex;
+    justify-content:baseline;
+    border: 10px;
+    padding: 10px;
+    margin-right: 20%;
+    margin-left: 5%;
+}
+/****/
+/*Menu categorías*/
+.contenedor-nav{
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+}
+/****/
+/*Estilo menu*/
+header nav{
+    display: flex;
+    justify-content:baseline;
+    align-items:baseline;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+}
+header nav ul li{
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+header nav li:hover {
+    background: #3b5064;
+    border-radius: 2px;
+}
+/****/
+/*Estilo cuerpo INDEX*/
+#home-white{
+    min-height: auto;
+    background-color: rgb(255, 255, 255);
+}
+#home-black{
+    min-height: auto;
+    background-color: rgb(175, 175, 175);
+}
+#titulo-bienvenida{
+    margin-top: 150px;
+}
+#home .contenedor-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#home .contenedor-home p{
+    margin: 20px 0;
+}
+#home .contenedor-home img{
+    margin: 20px 0;
+}
+/****/
+/*Cuerpo de las recetas*/
+main section article .bloque{
+    color: black;
+    padding:30px;
+    width: 40%;
+    margin: 1% 1%;
+}
+main section .cuerpo-receta{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+    border: 1 px solid black;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+}
+#borde-bloque1,
+#borde-bloque2{
+    border:1px solid lightslategray;
+    border-radius: 5px;
+}
+article h1{
+    text-decoration: underline;
+    /*Le di tamaño porque nunca mostró el tamaño real del H1*/
+    font-size: 28px;;
+}
+.margen-h3{
+    margin-top: 25px;
+}
+article p{
+    margin-bottom: 20px;
+    margin-top: 20px;;
+}
+article i{
+    margin: 10px;
+}
+article table td{
+    border:1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+.icono-estrella i:hover {
+    background: #eca023;
+    border-radius: 100%;
+}
+article h3{
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+article #borde-bloque1 li,
+article #borde-bloque2 li{
+    padding: 5px;
+    margin-left: 15px;
+}
+#titulo-resultado{
+    text-align: center;
+    margin-bottom: 30px;
+}
+/****/
+/*Footer*/
+.footer{
+    width: 100%;
+    height: 40px;;
+    background-color: #302f2f;
+}
+a:active {
+    background-color: #3f3e3e;
+    color: white;
+    border-radius: 5px;
+}
+.url-footer{
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 100px;
+    color:#ffffff;
+}
+/****/
