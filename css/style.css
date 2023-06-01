@@ -1,3 +1,6 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
 /*Formatear*/
 *{
     box-sizing: border-box;
@@ -5,17 +8,62 @@
     margin: 0;
 }
 body{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0 auto;
 }
 /**/
+.linea{
+    border-bottom: #000000 solid 5px;
+    width: 200px;
+    margin-bottom: 20px;
+}
 /*Logo*/
 header img{
     width: 20%;
     height: 10%;
     background-color: red;
-
 }
 /**/
+/*estilos de texto*/
+@font-face {
+    font-family: 'Biko';
+    src: url(../fonts/Biko_Regular.otf);
+}
+body main section article h2{
+    font-weight: 600;   
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #000000;
+}
+body main section article h3{
+    font-weight: 200; 
+    padding-bottom: 10px;
+    font-size: 60px;
+    color: #000000;
+}
+body main section article h4{
+    font-weight: 300; 
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #000000;
+}
+body main section article p{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #000000;
+}
+.arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.biko{
+    font-family: 'Biko', sans-serif;
+}
+.textorojo{
+    color:#F9004D;
+}
+.resaltador{
+    background-color: rgb(246, 255, 0);
+}
 /*cabecera*/
 .header{
     background-color: #302f2f;
@@ -30,11 +78,85 @@ header img{
     margin-right: 20%;
     margin-left: 5%;
 }
+.logo{
+    font-size: 50px;
+}
+.bienvenida{
+    text-align: left;
+    color: white;
+    font-size: 30px;
+}
 /****/
+/**Estilo caja contacto**/
+#borde-contacto{ 
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 2px;
+}
+#contenedor-img{
+    width: 100%;
+}
+.contenedor-img-inicio{
+    background-image: url(../images/img-header.jpg);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content:end;
+}
+/**Texto sobre diplomado**/
+.parrafo-1{
+    color:yellow;
+    font-size: 20px; 
+    text-transform:uppercase;
+    padding: 7px;
+}
+.parrafo-2{
+    color:#8eade6;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 7px;
+}
+.parrafo-3{
+    color:#8eade6;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 7px;
+}
+.parrafo-2 span{
+    color:#DC5297;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 45px;
+    padding: 7px;
+}
+.parrafo-3 span{
+    color:yellow;
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 45px;
+}
+#contenedor-parrafos{
+    width: 100%;
+    height: 100%;
+    padding-right: 10%;
+    text-align: right;
+    padding-top: 5%;
+    backdrop-filter: brightness(40%);
+}
+#boton-parrafo{
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    margin-top: 5%;
+    border-radius: 5px;
+    border-color: white;
+}
 /*Menu categorías*/
 .contenedor-nav{
     width: 100%;
-    height: 60px;
+    height: 80px;
     margin: 0 auto;
 }
 /****/
@@ -60,107 +182,108 @@ header nav li:hover {
     border-radius: 2px;
 }
 /****/
-/*Estilo cuerpo INDEX*/
-.icono{
-    fill:red;
-    width: 50px;
-    height: 50px;
-}
+/*Estilo contenedores ARTICLE*/
 .home-white{
     min-height: 500px;
     background-color: rgb(255, 255, 255);
 }
+ 
 .home-black{
     min-height: 500px;
-    background-color: rgb(175, 175, 175);
+   background-color: rgb(226, 226, 226);
 }
 #home-header{
-    /* background: url(ubicacion de la foto); 
-        Por ahora ira un color -Patrick*/
-        background: rgb(63, 63, 73);
+    background-image: url('../images/img-header.jpg');
     min-height: 500px;
 }
-#titulo-bienvenida{
-    margin-top: 150px;
-}
-#home .contenedor-home{
+.contenedor-home{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 5em 0;
+    width: 80%;
+    margin: 0 auto;
 }
-#home .contenedor-home p{
+
+
+.home .contenedor-home p{
+    text-align: justify;
+    font-size: 20px;
     margin: 20px 0;
 }
-#home .contenedor-home img{
+.home .contenedor-home img{
     margin: 20px 0;
 }
-/****/
-/*Cuerpo de las recetas*/
-main section article .bloque{
-    color: black;
-    padding:30px;
-    width: 40%;
-    margin: 1% 1%;
+/**Estilo contenedores formato IMAGEN**/
+.formato-img{
+    width: 250px;
+    height: 300px;
+    background-color: #302f2f;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
 }
-main section .cuerpo-receta{
+#contenedor-formato-img{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+#titulo-formato-img{
+    text-align: center;
+    padding: 30px;
+    margin-top: 3%;
+}
+
+#contenedor-formato-img-2{
+    display: flex;
+    align-items: baseline;
+    width:100%;
     padding: 20px;
-    border: 1 px solid black;
-    width: 90%;
-    margin: 0 auto;
+}
+
+#parrafo-float{
+
+    font-size: 18px;
+}
+#formato-img-2{
+    width:30%;
+    height: 250px;
+    background-color: #8f8b8b;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+/*Footer*/
+footer{
+    width: 100%;
+    background-color: #302f2f;
+    display: flex;
+    color: white;
+    padding: 20px;
+    justify-content: space-around;
+}
+.footer{
+    width: 33%;
+    display: flex;
     justify-content: center;
 }
-#borde-bloque1,
-#borde-bloque2{
-    border:1px solid lightslategray;
-    border-radius: 5px;
+/* Div Iconos Redes Sociales */
+.rd{
+    display: flex;
+    font-size: 20px;
 }
-article h1{
-    text-decoration: underline;
-    /*Le di tamaño porque nunca mostró el tamaño real del H1*/
-    font-size: 28px;
-}
-.margen-h3{
-    margin-top: 25px;
-}
-article p{
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-article i{
-    margin: 10px;
-}
-article table td{
-    border:1px solid black;
-    padding: 5px;
-    border-radius: 5px;
-
-}
-.icono-estrella i:hover {
-    background: #eca023;
-    border-radius: 100%;
-}
-article h3{
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
-
-article #borde-bloque1 li,
-article #borde-bloque2 li{
-    padding: 5px;
-    margin-left: 15px;
-}
-#titulo-resultado{
-    text-align: center;
-    margin-bottom: 30px;
-}
-/****/
-/*Footer*/
-.footer{
-    width: 100%;
-    height: 40px;;
-    background-color: #302f2f;
+/* Icono Redes Sociales */
+.rd .iconord{
+    padding: 10px;
 }
 a:active {
     background-color: #3f3e3e;
@@ -174,3 +297,22 @@ a:active {
     color:#ffffff;
 }
 /****/
+/**Sección 1 "Diplomado DW**/
+#seccion1 div .material-symbols-outlined {
+    font-size: 110px;
+    display: flex;
+}
+#seccion1{
+display: flex;
+align-items: baseline;
+}
+#seccion1 a{
+    text-decoration: none;
+    color:#F9004D
+}
+.fa-circle-check{
+    color:#0ad942
+}
+#seccion1 p{
+    margin-bottom: 60px;
+}
