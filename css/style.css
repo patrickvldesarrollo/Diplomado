@@ -316,3 +316,7 @@ align-items: baseline;
 #seccion1 p{
     margin-bottom: 60px;
 }
+#seccion1 a,
+#seccion1 .textorojo{
+    text-decoration: underline;
+}
