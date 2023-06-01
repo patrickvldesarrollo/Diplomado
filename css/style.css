@@ -11,7 +11,6 @@ body{
     font-family: 'Work Sans', sans-serif;
     margin: 0 auto;
 }
-/**/
 .linea{
     border-bottom: #000000 solid 5px;
     width: 200px;
@@ -23,8 +22,7 @@ header img{
     height: 10%;
     background-color: red;
 }
-/**/
-/*estilos de texto*/
+/*Estilos de texto*/
 @font-face {
     font-family: 'Biko';
     src: url(../fonts/Biko_Regular.otf);
@@ -64,7 +62,7 @@ body main section article p{
 .resaltador{
     background-color: rgb(246, 255, 0);
 }
-/*cabecera*/
+/*Cabecera*/
 .header{
     background-color: #302f2f;
     color: #ffffff;
@@ -86,7 +84,6 @@ body main section article p{
     color: white;
     font-size: 30px;
 }
-/****/
 /**Estilo caja contacto**/
 #borde-contacto{ 
     border: 1px solid white;
@@ -103,7 +100,7 @@ body main section article p{
     display: flex;
     justify-content:end;
 }
-/**Texto sobre diplomado**/
+/**Texto sobre bienvenida diplomado**/
 .parrafo-1{
     color:yellow;
     font-size: 20px; 
@@ -153,13 +150,12 @@ body main section article p{
     border-radius: 5px;
     border-color: white;
 }
-/*Menu categorías*/
+/*Contenedor NAV menu*/
 .contenedor-nav{
     width: 100%;
     height: 80px;
     margin: 0 auto;
 }
-/****/
 /*Estilo menu*/
 header nav{
     display: flex;
@@ -181,16 +177,14 @@ header nav li:hover {
     background: #3b5064;
     border-radius: 2px;
 }
-/****/
-/*Estilo contenedores ARTICLE*/
+/*Contenedores ARTICLE*/
 .home-white{
     min-height: 500px;
     background-color: rgb(255, 255, 255);
 }
- 
 .home-black{
     min-height: 500px;
-   background-color: rgb(226, 226, 226);
+    background-color: rgb(226, 226, 226);
 }
 #home-header{
     background-image: url('../images/img-header.jpg');
@@ -204,8 +198,6 @@ header nav li:hover {
     width: 80%;
     margin: 0 auto;
 }
-
-
 .home .contenedor-home p{
     text-align: justify;
     font-size: 20px;
@@ -213,6 +205,29 @@ header nav li:hover {
 }
 .home .contenedor-home img{
     margin: 20px 0;
+}
+/**Sección 1 "Diplomado DW**/
+#seccion1 div .material-symbols-outlined {
+    font-size: 110px;
+    display: flex;
+}
+#seccion1{
+display: flex;
+align-items: baseline;
+}
+#seccion1 a{
+    text-decoration: none;
+    color:#F9004D
+}
+.fa-circle-check{
+    color:#0ad942
+}
+#seccion1 p{
+    margin-bottom: 60px;
+}
+#seccion1 a,
+#seccion1 p .textorojo{
+    text-decoration: underline;
 }
 /**Estilo contenedores formato IMAGEN**/
 .formato-img{
@@ -237,21 +252,29 @@ header nav li:hover {
     text-align: center;
     padding: 30px;
     margin-top: 3%;
+    font-size: 60px;
 }
-
 #contenedor-formato-img-2{
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     width:100%;
     padding: 20px;
 }
-
 #parrafo-float{
-
     font-size: 18px;
+    width: 100%;
+    padding: 20px;
+}
+.contenedor-imagenes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: space-between; 
 }
 #formato-img-2{
-    width:30%;
+    width:20%;
     height: 250px;
     background-color: #8f8b8b;
     color: rgb(0, 0, 0);
@@ -261,6 +284,45 @@ header nav li:hover {
     padding: 20px;
     display: flex;
     align-items: center;
+}
+/**Cajas colores**/
+#contenedor-cajas-color{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+
+}
+#caja-amarilla{
+    width:300px;
+    height: 300px;
+    background-color: rgb(247, 247, 79);
+    border-radius: 10px;
+}
+#caja-rosada{
+    width:300px;
+    height: 300px;
+    background-color: rgb(245, 91, 116);
+    border-radius: 10px;
+}
+#caja-negra{
+    width:300px;
+    height: 300px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+}
+#caja-blanca{
+    width:300px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.parrafo-cajas-color{
+    font-weight: bold;
+    text-transform:uppercase;
+    margin-top: 10px;
 }
 /*Footer*/
 footer{
@@ -296,27 +358,9 @@ a:active {
     margin-left: 100px;
     color:#ffffff;
 }
-/****/
-/**Sección 1 "Diplomado DW**/
-#seccion1 div .material-symbols-outlined {
-    font-size: 110px;
+/* sección Medidas */
+#secmedidas article div{
+    background-color: #0ad942;
     display: flex;
-}
-#seccion1{
-display: flex;
-align-items: baseline;
-}
-#seccion1 a{
-    text-decoration: none;
-    color:#F9004D
-}
-.fa-circle-check{
-    color:#0ad942
-}
-#seccion1 p{
-    margin-bottom: 60px;
-}
-#seccion1 a,
-#seccion1 .textorojo{
-    text-decoration: underline;
+    flex-direction: column;
 }
