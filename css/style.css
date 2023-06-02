@@ -263,13 +263,45 @@ align-items: baseline;
     width: 100%;
     padding: 20px;
 }
+/* CAJAS 5 COLORES*/
 .contenedor-imagenes{
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    margin-top: 50px;
-    justify-content: space-between; 
+    justify-content: space-around;
+    margin-top: 60px;
+    padding: 20px;
+    width: 90%;
+}
+#colorrosado{
+    width:319px;
+    height: 170px;
+    background-color: #F9004D;
+}
+#coloramarillo{
+    width:319px;
+    height: 170px;
+    background-color: #FFC915;
+}
+#colorazul{
+    width:319px;
+    height: 170px;
+    background-color: #01a8d9;
+}
+.verdenegro{
+    display: flex;
+    margin-top: -20px;
+    justify-content: space-around;
+    padding: 20px;
+    width: 71%;
+}
+#colorverde{
+    width:365px;
+    height: 230px;
+    background-color: #0daf1a;
+}
+#colornegro{
+    width:380px;
+    height: 230px;
+    background-color: #101010;
 }
 #formato-img-2{
     width:26%;
