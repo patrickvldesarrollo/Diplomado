@@ -1,6 +1,5 @@
 /* Imports */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
-
 /*Formatear*/
 *{
     box-sizing: border-box;
@@ -102,32 +101,32 @@ body main section article p{
 }
 /**Texto sobre bienvenida diplomado**/
 .parrafo-1{
-    color:yellow;
+    color:#FFC915;
     font-size: 20px; 
     text-transform:uppercase;
     padding: 7px;
 }
 .parrafo-2{
-    color:#8eade6;
+    color:#FFFFFF;
     font-size: 35px;
     font-weight: bold;
     padding: 7px;
 }
 .parrafo-3{
-    color:#8eade6;
+    color:#FFFFFF;
     font-size: 35px;
     font-weight: bold;
     padding: 7px;
 }
 .parrafo-2 span{
-    color:#DC5297;
+    color:#F9004D;
     font-size: 35px;
     font-weight: bold;
     margin-top: 45px;
     padding: 7px;
 }
 .parrafo-3 span{
-    color:yellow;
+    color:#FFC915;
     font-size: 35px;
     font-weight: bold;
     margin-top: 45px;
@@ -141,7 +140,7 @@ body main section article p{
     backdrop-filter: brightness(40%);
 }
 #boton-parrafo{
-    background-color: red;
+    background-color: #F81E03;
     font-weight: bold;
     color: white;
     padding: 15px;
@@ -233,11 +232,10 @@ align-items: baseline;
 .formato-img{
     width: 250px;
     height: 300px;
-    background-color: #302f2f;
-    color: white;
+    background-color: #313131;
+    color: #FFFFFF;
     font-size: 40px;
     font-weight: bold;
-    text-align: center;
     display: flex;
     align-items: flex-end;
     padding: 20px;
@@ -274,15 +272,15 @@ align-items: baseline;
     justify-content: space-between; 
 }
 #formato-img-2{
-    width:20%;
+    width:26%;
     height: 250px;
-    background-color: #8f8b8b;
-    color: rgb(0, 0, 0);
+    background-color: #626262;
+    color: #000000;
     font-size: 40px;
-    font-weight: bold;
+    font-weight:bold;
     text-align: center;
-    padding: 20px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 /**Cajas colores**/
@@ -295,27 +293,27 @@ align-items: baseline;
 
 }
 #caja-amarilla{
-    width:300px;
-    height: 300px;
-    background-color: rgb(247, 247, 79);
+    width:250px;
+    height: 200px;
+    background-color: #FFC915;
     border-radius: 10px;
 }
 #caja-rosada{
-    width:300px;
-    height: 300px;
-    background-color: rgb(245, 91, 116);
+    width:250px;
+    height: 200px;
+    background-color: #F9004D;
     border-radius: 10px;
 }
 #caja-negra{
-    width:300px;
-    height: 300px;
-    background-color: rgb(0, 0, 0);
+    width:250px;
+    height: 200px;
+    background-color: #000000;
     border-radius: 10px;
 }
 #caja-blanca{
-    width:300px;
-    height: 300px;
-    background-color: rgb(255, 255, 255);
+    width:250px;
+    height: 200px;
+    background-color: #FFFFFF;
     border-radius: 10px;
     border: 1px solid black;
 }
@@ -328,22 +326,86 @@ align-items: baseline;
 #contenedor-flexbox{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
-    padding: 20px;
-    width: 100%;
-    background-color: red;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 100px;
+    width: 80%;
+    background-color: #F81E03;
+    margin: 0 auto;
+}
+#article-flexbox{
+    background-color:#F81E03;
 }
 .item-cuadrado{
-    width:300px;
-    height: 300px;
-    background-color: rgb(124, 122, 122);
-    border-radius: 10px;
+    width:250px;
+    height:250px;
+    background-color: rgb(37, 37, 37);
+    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    font-size: 30px;
 }
-.item-reclangulo-chico{
-    width:400px;
-    height: 150px;
-    background-color: rgb(124, 122, 122);
-    border-radius: 10px;
+.item-rectangulo-chico{
+    width:250px;
+    height:150px;
+    background-color: rgb(37, 37, 37);
+    margin-bottom:20px;
+    margin-top:5%;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    font-size: 30px;
+}
+.item-rectangulo-grande{
+    width:48.5%;
+    height:300px;
+    background-color: rgb(37, 37, 37);
+    margin-bottom:20px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color:white;
+    font-size: 30px;
+}
+#titulo-flexbox{
+    color:white;
+    text-align:center;
+    margin-top:30px;
+    padding:50px;
+}
+/**Sección galería de imágenes CCS Grid**/
+#contenedor-galeria{
+    width: 80%;
+    min-height: 500px;
+    background-color: gray;
+    margin: 0 auto;
+}
+#foto-vertical{
+    width:30%;
+    height: 500px;
+    float:left;
+    margin: 1px solid black;
+    background-color: red;
+    background-image: url('../images/img-header.jpg');
+}
+.foto-cuadrado{
+    width:35%;
+    height: 250px;
+    background-color: blue;
+    float: left;
+    margin: 1px solid black;
+    background-image: url('../images/img-header.jpg');
+}
+#foto-horizontal{
+    width:70%;
+    height: 250px;
+    background-color: green;
+    float: left;
+    margin: 1px solid black;
+    background-image: url('../images/img-header.jpg');
 }
 /*Footer*/
 footer{
@@ -381,7 +443,17 @@ a:active {
 }
 /* sección Medidas */
 #secmedidas article div{
-    background-color: #0ad942;
     display: flex;
-    flex-direction: column;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#secmedidas article div div{
+    display: flex;
+    width: 50%;
+    align-items: center;
+}
+#secmedidas article div div h4{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
 }
