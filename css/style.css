@@ -96,7 +96,7 @@ body main section article p{
     width: 100%;
 }
 .contenedor-img-inicio{
-    background-image: url(../images/img-header.jpg);
+    background-image: url(../images/jpg/img-header.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -192,7 +192,7 @@ header nav li:hover {
     background-color: rgb(226, 226, 226);
 }
 #home-header{
-    background-image: url('../images/img-header.jpg');
+    background-image: url('../images/jpg/img-header.jpg');
     min-height: 500px;
 }
 .contenedor-home{
