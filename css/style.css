@@ -11,7 +11,7 @@ body{
     margin: 0 auto;
 }
 .linea{
-    border-bottom: #000000 solid 5px;
+    border-bottom: rgb(0,0,0) solid 5px;
     width: 200px;
     margin-bottom: 20px;
 }
@@ -19,7 +19,7 @@ body{
 header img{
     width: 20%;
     height: 10%;
-    background-color: red;
+    background-color: rgb(249,0,77);
 }
 /*Estilos de texto*/
 @font-face {
@@ -30,24 +30,24 @@ body main section article h2{
     font-weight: 600;   
     padding-bottom: 10px;
     font-size: 60px;
-    color: #000000;
+    color: rgb(0,0,0);
 }
 body main section article h3{
     font-weight: 200; 
     padding-bottom: 10px;
     font-size: 60px;
-    color: #000000;
+    color: rgb(0,0,0);
 }
 body main section article h4{
     font-weight: 300; 
     padding-bottom: 20px;
     font-size: 20px;
-    color: #000000;
+    color: rgb(0,0,0);
 }
 body main section article p{
     padding-bottom: 10px;
     font-size: 20px;
-    color: #000000;
+    color: rgb(0,0,0);
 }
 .arial{
     font-family: Arial, Helvetica, sans-serif;
@@ -55,16 +55,19 @@ body main section article p{
 .biko{
     font-family: 'Biko', sans-serif;
 }
+.left{
+    text-align: left !important;
+}
 .textorojo{
-    color:#F9004D;
+    color:rgb(249,0,77);
 }
 .resaltador{
     background-color: rgb(246, 255, 0);
 }
 /*Cabecera*/
 .header{
-    background-color: #000000;
-    color: #ffffff;
+    background-color: rgb(0,0,0);
+    color: rgb(255,255,255);
     height: 100px;
 }
 .logo-sitio{
@@ -78,12 +81,12 @@ body main section article p{
 }
 .bienvenida{
     text-align: left;
-    color: white;
+    color: rgb(255,255,255);
     font-size: 30px;
 }
 /**Estilo caja contacto**/
 #borde-contacto{ 
-    border: 1px solid white;
+    border: 1px solid rgb(255,255,255);
     padding: 10px;
     font-size: 15px;
     font-weight: 700;
@@ -94,6 +97,9 @@ body main section article p{
 }
 .contenedor-img-inicio{
     background-image: url(../images/img-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     width: 100%;
     height: 80vh;
     display: flex;
@@ -101,32 +107,32 @@ body main section article p{
 }
 /**Texto sobre bienvenida diplomado**/
 .parrafo-1{
-    color:#FFC915;
+    color:rgb(255,201,21);
     font-size: 20px; 
     text-transform:uppercase;
     padding: 7px;
 }
 .parrafo-2{
-    color:#FFFFFF;
+    color:rgb(255,255,255);
     font-size: 35px;
     font-weight: bold;
     padding: 7px;
 }
 .parrafo-3{
-    color:#FFFFFF;
+    color:rgb(255,255,255);
     font-size: 35px;
     font-weight: bold;
     padding: 7px;
 }
 .parrafo-2 span{
-    color:#F9004D;
+    color:rgb(249,0,77);
     font-size: 35px;
     font-weight: bold;
     margin-top: 45px;
     padding: 7px;
 }
 .parrafo-3 span{
-    color:#FFC915;
+    color:rgb(255,201,21);
     font-size: 35px;
     font-weight: bold;
     margin-top: 45px;
@@ -140,14 +146,14 @@ body main section article p{
     backdrop-filter: brightness(40%);
 }
 #boton-parrafo{
-    background-color: #F81E03;
+    background-color:rgb(249,0,77);
     font-weight: bold;
-    color: white;
+    color: rgb(255,255,255);
     padding: 15px;
     font-size: 20px;
     margin-top: 5%;
     border-radius: 5px;
-    border-color: white;
+    border-color: rgb(255,255,255);
 }
 /*Contenedor NAV menu*/
 .contenedor-nav{
@@ -167,17 +173,17 @@ header nav ul li{
     margin-left: 20px;
 }
 header nav ul li a {
-    color: white;
+    color: rgb(255,255,255);
     padding: 10px;
     text-decoration: none;
 }
 header nav li:hover {
-    background: #3b5064;
+    background: rgb(59, 80, 100);
     border-radius: 10px;
     transition: 0.5s ease-in-out;
 }
 /*Contenedores ARTICLE*/
-.home-white{
+.home-red{
     min-height: 500px;
     background-color: rgb(255, 255, 255);
 }
@@ -192,10 +198,12 @@ header nav li:hover {
 .contenedor-home{
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding: 5em 0;
     width: 80%;
     margin: 0 auto;
+}
+.contenedor-home h2{
+    text-align: center
 }
 .home .contenedor-home p{
     text-align: justify;
@@ -216,10 +224,10 @@ align-items: baseline;
 }
 #seccion1 a{
     text-decoration: none;
-    color:#F9004D
+    color:rgb(249,0,77)
 }
 .fa-circle-check{
-    color:#0ad942
+    color:rgb(10, 217, 65)
 }
 #seccion1 p{
     margin-bottom: 60px;
@@ -232,8 +240,8 @@ align-items: baseline;
 .formato-img{
     width: 250px;
     height: 300px;
-    background-color: #313131;
-    color: #FFFFFF;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255,255,255);
     font-size: 40px;
     font-weight: bold;
     display: flex;
@@ -253,67 +261,68 @@ align-items: baseline;
     font-size: 60px;
 }
 #contenedor-formato-img-2{
-    display: flex;
-    align-items: flex-start;
-    width:100%;
     padding: 20px;
 }
 #parrafo-float{
-    font-size: 18px;
+    font-size: 25px;
     width: 100%;
-    padding: 20px;
+    line-height: 40px;
 }
 /* CAJAS 5 COLORES*/
 .contenedor-imagenes{
-    display: flex;
+    /*display: flex;
     justify-content: space-around;
     margin-top: 60px;
     padding: 20px;
-    width: 90%;
+    width: 90%;*/
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    height: 500px;
+    
+    
 }
 #colorrosado{
-    width:319px;
-    height: 170px;
-    background-color: #F9004D;
+    background-color: rgb(249,0,77);
 }
 #coloramarillo{
-    width:319px;
-    height: 170px;
-    background-color: #FFC915;
+    background-color: rgb(255,201,21);
 }
 #colorazul{
-    width:319px;
-    height: 170px;
-    background-color: #01a8d9;
+    background-color: rgb(1, 168, 217);
 }
-.verdenegro{
-    display: flex;
-    margin-top: -20px;
-    justify-content: space-around;
-    padding: 20px;
-    width: 71%;
+.caja1{
+    width:32%;
+    height: 50%;
+    margin: 2px;
 }
 #colorverde{
-    width:365px;
-    height: 230px;
-    background-color: #0daf1a;
+    background-color: rgb(13, 175, 26);
 }
 #colornegro{
-    width:380px;
-    height: 230px;
-    background-color: #101010;
+    background-color:rgb(0,0,0);
+}
+.caja2{
+    width:48%;
+    height: 50%;
+    margin: 30px 10px;
 }
 #formato-img-2{
-    width:26%;
+    width:20%;
     height: 250px;
-    background-color: #626262;
-    color: #000000;
+    background-color: rgb(98, 98, 98);
+    color: rgb(0,0,0);
     font-size: 40px;
     font-weight:bold;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    float: left;
+    margin-right: 20px;
 }
 /**Cajas colores**/
 #contenedor-cajas-color{
@@ -322,32 +331,31 @@ align-items: baseline;
     justify-content: space-around;
     padding: 20px;
     width: 100%;
-
 }
 #caja-amarilla{
     width:250px;
     height: 200px;
-    background-color: #FFC915;
+    background-color: rgb(255,201,21);
     border-radius: 10px;
 }
 #caja-rosada{
     width:250px;
     height: 200px;
-    background-color: #F9004D;
+    background-color: rgb(249,0,77);
     border-radius: 10px;
 }
 #caja-negra{
     width:250px;
     height: 200px;
-    background-color: #000000;
+    background-color: rgb(0,0,0);
     border-radius: 10px;
 }
 #caja-blanca{
     width:250px;
     height: 200px;
-    background-color: #FFFFFF;
+    background-color: rgb(255,255,255);
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(0,0,0);
 }
 .parrafo-cajas-color{
     font-weight: bold;
@@ -362,11 +370,11 @@ align-items: baseline;
     align-items: flex-start;
     padding: 100px;
     width: 80%;
-    background-color: #F81E03;
+    background-color: rgb(248, 30, 3);
     margin: 0 auto;
 }
 #article-flexbox{
-    background-color:#F81E03;
+    background-color:rgb(248, 30, 3);
 }
 .item-cuadrado{
     width:250px;
@@ -376,7 +384,7 @@ align-items: baseline;
     display: flex;
     align-items: center;
     justify-content:center;
-    color:white;
+    color:rgb(255,255,255);
     font-size: 30px;
 }
 .item-rectangulo-chico{
@@ -388,7 +396,7 @@ align-items: baseline;
     display: flex;
     align-items: center;
     justify-content:center;
-    color:white;
+    color:rgb(255,255,255);
     font-size: 30px;
 }
 .item-rectangulo-grande{
@@ -399,11 +407,11 @@ align-items: baseline;
     display: flex;
     align-items: center;
     justify-content:center;
-    color:white;
+    color:rgb(255,255,255);
     font-size: 30px;
 }
 #titulo-flexbox{
-    color:white;
+    color:rgb(255,255,255);
     text-align:center;
     margin-top:30px;
     padding:50px;
@@ -446,9 +454,9 @@ font-weight: 700;
 footer{
     width: 100%;
     height: 150px;
-    background-color: #000000;
+    background-color: rgb(0,0,0);
     display: flex;
-    color: white;
+    color: rgb(255,255,255);
     padding: 20px;
     justify-content: space-around;
 }
@@ -471,15 +479,15 @@ footer{
     padding: 10px;
 }
 a:active {
-    background-color: #3f3e3e;
-    color: white;
+    background-color: rgb(63, 62, 62);
+    color: rgb(255,255,255);
     border-radius: 5px;
 }
 .url-footer{
     text-decoration: none;
     padding: 10px;
     margin-left: 100px;
-    color:#ffffff;
+    color:rgb(255,255,255);
 }
 /* sección Medidas */
 #secmedidas article div{
