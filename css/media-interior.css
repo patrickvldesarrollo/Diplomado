@@ -1,0 +1,131 @@
+@media (max-width: 600px){
+    .contenedor-nav{
+        justify-content: space-between;
+        padding: 0px 20px;
+    }
+    .contenedor-nav ul{
+        display: none;
+    }
+    header nav div h1{
+        display: flex;
+        margin: 0 auto;
+
+    }
+    .contenedor-img-inicio-int{
+        height: 20vh;
+    }
+    .parrafo-1-interior{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .reproductor{
+        width: 100%;
+    }
+    .main{
+        width: 100%;
+    }
+    .wrapper{
+        display: grid;
+        float: left;
+        width: 100%;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        order: 2;
+    }
+
+    .btnmenu{
+        display: block !important;
+    }
+    
+    #cajas-negras{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        
+    }
+    #cajas-negras div{
+        width: 90%;
+        margin: 10px;
+        height: 500px;
+    }
+
+    #cajas-negras div p{
+        font-size: 30px;
+    }
+
+    .fotos-galeria-int{
+        display: grid;
+        grid-template-columns: repeat(6, 33,33.33vh);
+        grid-template-rows: repeat( 3, 32.50%);
+    }
+
+    #galeriagris .divcontent{
+        width: 50%;
+    }
+    
+    #galeriagris:nth-child(1){
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    #galeriagris:nth-child(3){
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    #galeriagris:nth-child(5){
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    #galeriagris:nth-child(7){
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+    }
+    #galeriagris:nth-child(9){
+        grid-column: 5 / 6;
+        grid-row: 1 / 2;
+    }
+    
+    #galeriagris .divcontent:nth-child(1),
+    #galeriagris .divcontent:nth-child(4),
+    #galeriagris .divcontent:nth-child(5),
+    #galeriagris .divcontent:nth-child(8),
+    #galeriagris .divcontent:nth-child(9){
+        background-color: #808080 !important;
+        background-image: url(../images/jpg/ios-image-negro.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    #galeriagris .divcontent:nth-child(2),
+    #galeriagris .divcontent:nth-child(3),
+    #galeriagris .divcontent:nth-child(6),
+    #galeriagris .divcontent:nth-child(7),
+    #galeriagris .divcontent:nth-child(10){
+        background-color: #c7c7c7 !important;
+        background-image: url(../images/jpg/ios-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+}
+
+
+
+/* Dispositivos pequeños (S) (teléfonos en horizontal, 576px hacia arriba) */
+@media (min-width: 576px) {}
+ 
+/* Dispositivos Medianos (M) (tablets, 768px hacia arriba) */
+@media (min-width: 768px) {}
+ 
+/* Dispositivos Grandes (L) (escritorio, 992px hacia arriba) */
+@media (min-width: 992px) {}
+ 
+/* Dispositivos extra Grandes (XL) (pantallas grandes, 1200px hacia arriba) */
+@media (min-width: 1200px) {}
+ 
+/* Dispositivos extra extra Grandes (XXL) (pantallas, televisores, etc, 1400px hacia arriba) */
+@media (min-width: 1400px) {}

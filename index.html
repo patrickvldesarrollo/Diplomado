@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DuocUC | Evaluacion-1</title>
+  <title>DuocUC | Evaluacion-2</title>
   <!-- icono de google-->
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -13,6 +13,7 @@
   <script src="https://kit.fontawesome.com/e6ea5ea0d9.js" crossorigin="anonymous"></script>
   <meta charset="utf-8" />
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/media-query-style.css">
 </head>
 <body>
   <header class="header">
@@ -21,7 +22,7 @@
         <h1 class="logo">DDW</h1>
       </div>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="interior.html">Home</a></li>
         <li><a href="#">Clase repaso</a></li>
         <li><a href="#">CSS</a></li>
         <li><a href="#">Galería de imágenes</a></li>
@@ -165,19 +166,21 @@
       </article>
       <article class="contenedor-home">
         <h2>Float</h2>
-        <div id="contenedor-formato-img-2">
-          <div id="formato-img-2">JPG</div>
-            <p id="parrafo-float">Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry’s
-            standard dummy text ever since the 1500s, when an unknown
-            printer took a galley of type and scrambled it to make a type
-            specimen book. It has survived not only five centuries, but also
-            the leap into electronic typesetting, remaining essentially
-            unchanged. It was popularised in the 1960s with the release of
-            Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-            publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long
-            established fact that a reader will be distracted by the readable content.
-          </p>
+        <div id="formato">
+            <div class="contenedor-formato-img-2">JPG</div>
+              <div class="formato-img-2">
+                <p id="parrafo-float">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also
+                    the leap into electronic typesetting, remaining essentially
+                    unchanged. It was popularised in the 1960s with the release of
+                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum. It is a long
+                    established fact that a reader will be distracted by the readable content.
+                  </p>
+              </div>
         </div>
         <div class="contenedor-imagenes">
           <div class="caja1" id="colorrosado"></div>
@@ -205,13 +208,11 @@
       <article class="contenedor-home">
         <h2>Galería de imágenes</h2>
         <h2>CSS Grid</h2><!-- CSS Grid -->
-        <div id="contenedor-galeria">
-          <div>
-          <div id="foto-vertical"><img src="images/jpg/foto3.jpg" alt=""></div>
-          <div class="foto-cuadrado1"><img src="images/jpg/foto1.jpg" alt=""></div>
-          <div class="foto-cuadrado2"><img src="images/jpg/foto2.jpg" alt=""></div>
-          <div id="foto-horizontal"><img src="images/jpg/foto4.jpg" alt=""></div>
-          </div>
+          <div id="grid-galeria">
+            <article class="grid-galeria"></article>
+            <article class="grid-galeria"></article>
+            <article class="grid-galeria"></article>
+            <article class="grid-galeria"></article>
         </div>
       </article>
     </section>
@@ -229,7 +230,7 @@
       </div>
     </div>
     <div class="footer">
-      <p>&copy; 2023 Equipo 1. Derechos por reservar. </p>
+      <p>&copy; 2023 Equipo 1. Ningún derecho reservado. </p>
     </div>
   </footer>
 </body>

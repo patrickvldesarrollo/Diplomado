@@ -84,6 +84,10 @@ body main section article p{
     color: rgb(255,255,255);
     font-size: 30px;
 }
+
+.btnmenu{
+    display: none !important;
+}
 /**Estilo caja contacto**/
 #borde-contacto{ 
     border: 1px solid rgb(255,255,255);
@@ -260,13 +264,27 @@ align-items: baseline;
     margin-top: 3%;
     font-size: 60px;
 }
-#contenedor-formato-img-2{
-    padding: 20px;
+.contenedor-formato-img-2{
+    width: 260px;
+    height: 302px;
+    font-size: 40px;
+    margin: 30px 40px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    background-color: rgb(49, 49, 49);
+    color: rgb(255,255,255);
+}
+.formato-img-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
 }
 #parrafo-float{
     font-size: 25px;
-    width: 100%;
-    line-height: 40px;
+    line-height: 50px;
 }
 /* CAJAS 5 COLORES*/
 .contenedor-imagenes{
@@ -276,12 +294,14 @@ align-items: baseline;
     padding: 20px;
     width: 90%;*/
 
-    display: flex;
+    /*display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    height: 500px;
+    height: 500px;*/
+    width: 100%;
+    height: auto;
     
     
 }
@@ -296,19 +316,21 @@ align-items: baseline;
 }
 .caja1{
     width:32%;
-    height: 50%;
-    margin: 2px;
+    height: 200px;
+    margin: 3px;
+    float: left;
+}
+.caja2{
+    width:48%;
+    height: 200px;
+    margin: 3px;
+    float: left;
 }
 #colorverde{
     background-color: rgb(13, 175, 26);
 }
 #colornegro{
     background-color:rgb(0,0,0);
-}
-.caja2{
-    width:48%;
-    height: 50%;
-    margin: 30px 10px;
 }
 #formato-img-2{
     width:20%;
@@ -417,39 +439,46 @@ align-items: baseline;
     padding:50px;
 }
 /**Sección galería de imágenes CCS Grid**/
-#contenedor-galeria{
-    width: 90%;
-    height: 600px;
-    margin: 0 auto;
+div#grid-galeria article{
+    border: 1px solid black;
 }
-#foto-vertical{
-    width:30%;
-    height: 600px;
-    float:left;
-    margin: 10px;
+div#grid-galeria{
+    display: grid;
+    grid-template: repeat(3, 33.33vh) / repeat(4, 32.50%);
+    gap: 10px;
+    max-height: 660px;
 }
-.foto-cuadrado1,.foto-cuadrado2{
-    width:30%;
-    height: 280px;
-    float: left;
-    margin: 10px;
-    border-radius: 20px;
+
+div#grid-galeria article:nth-child(1){
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-image: url(../images/jpg/foto3.jpg);
+    background-size: 100% 100%;  
+}
+
+div#grid-galeria article:nth-child(2){
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-image: url(../images/jpg/foto1.jpg);
+    background-size: 100% 100%;
+}
+
+div#grid-galeria article:nth-child(3){
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    background-image: url(../images/jpg/foto2.jpg);
+    background-size: 100% 100%;
+}
+
+div#grid-galeria article:nth-child(4){
+    grid-column: 2 / 4;
+    grid-row: 3 / 2;
+    background-image: url(../images/jpg/foto4.jpg);
+    background-size: 100% 100%;
 }
 .bold{
-font-weight: 700;
-}
-#foto-horizontal{
-    width:62%;
-    height: 300px;
-    float: left;
-    margin: 10px;
-    border-radius: 20px;
-}
-#foto-vertical img, .foto-cuadrado1 img,.foto-cuadrado2 img,#foto-horizontal img{
-    width: 100%;
-    height: 100%;
-    border-radius: 20px;
-}
+    font-weight: 700;
+    }
 /*Footer*/
 footer{
     width: 100%;
@@ -506,3 +535,158 @@ a:active {
     width: 100%;
     box-sizing: border-box;
 }
+
+/* CSS PAGINA INTERIOR */
+.contenedor-img-inicio-int{
+    background-image: url(../images/jpg/img-header.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content:end;
+}
+.parrafo-1-interior{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+.parrafo-medio{
+    text-align: center;
+    color: rgb(51,51,51);
+    font-size: 40px;
+}
+.home-black-int{
+    min-height: 100%;
+}
+.banner{
+    background-color:rgb(248, 30, 3) ;
+    height: 702px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 5% 0px 0px;
+}
+.parrafo-medio{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2% 4%;
+}
+.seccion1-int{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Reproductor */
+
+.reproductor{
+    display: flex;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 70%;
+}
+
+/* Galeria */
+article h2 .titulo-galeria{
+    display: flex;
+    text-align: center;
+    
+}
+#galeriagris{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 5%;
+    width: 80%;
+    margin: auto;
+}
+
+#galeriagris .divcontent{
+    width: 20%;
+    height: 180px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#galeriagris .divcontent img{
+    width: 40px;
+    height: 40px;
+    
+}
+#galeriagris .divcontent:nth-child(odd){
+    background-color: #808080;
+    background-image: url(../images/jpg/ios-image-negro.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#galeriagris .divcontent:nth-child(even){
+    background-color: #c7c7c7;
+    background-image: url(../images/jpg/ios-image.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+/* Contenido */
+
+.contenido h2{
+display: flex;
+flex-direction: column;
+align-items: center;
+width: 80%;
+padding-top: 3%;
+font-size: 50px;
+
+}
+#cajas-negras{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    
+}
+#cajas-negras div{
+    width: 22%;
+    height: 200px;
+    background-color: #191919;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    font-size: 20px;
+    justify-content: center;
+}
+#cajas-negras div p{
+    color: #ffff;
+    font-size: 80%;
+}
+#cajas-negras div img{
+margin-left: 5%;
+}
+.main{
+    width: 80%;
+    padding: 0px 20px;
+    float: left;
+}
+.titulo-galeria{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.contenido h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
