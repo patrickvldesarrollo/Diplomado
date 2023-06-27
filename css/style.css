@@ -223,8 +223,8 @@ header nav li:hover {
     display: flex;
 }
 #seccion1{
-display: flex;
-align-items: baseline;
+    display: flex;
+    align-items: baseline;
 }
 #seccion1 a{
     text-decoration: none;
@@ -268,7 +268,8 @@ align-items: baseline;
     width: 260px;
     height: 302px;
     font-size: 40px;
-    margin: 30px 40px 70px;
+    margin-right: 40px;
+    margin-top: 20px;;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,43 +277,16 @@ align-items: baseline;
     background-color: rgb(49, 49, 49);
     color: rgb(255,255,255);
 }
-.formato-img-2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 30px;
-}
 #parrafo-float{
     font-size: 25px;
     line-height: 50px;
+    margin-bottom: 40px;
+    margin-top: 30px;
 }
 /* CAJAS 5 COLORES*/
 .contenedor-imagenes{
-    /*display: flex;
-    justify-content: space-around;
-    margin-top: 60px;
-    padding: 20px;
-    width: 90%;*/
-
-    /*display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    height: 500px;*/
     width: 100%;
     height: auto;
-    
-    
-}
-#colorrosado{
-    background-color: rgb(249,0,77);
-}
-#coloramarillo{
-    background-color: rgb(255,201,21);
-}
-#colorazul{
-    background-color: rgb(1, 168, 217);
 }
 .caja1{
     width:32%;
@@ -325,6 +299,15 @@ align-items: baseline;
     height: 200px;
     margin: 3px;
     float: left;
+}
+#colorrosado{
+    background-color: rgb(249,0,77);
+}
+#coloramarillo{
+    background-color: rgb(255,201,21);
+}
+#colorazul{
+    background-color: rgb(1, 168, 217);
 }
 #colorverde{
     background-color: rgb(13, 175, 26);
@@ -340,9 +323,6 @@ align-items: baseline;
     font-size: 40px;
     font-weight:bold;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     float: left;
     margin-right: 20px;
 }
@@ -448,7 +428,6 @@ div#grid-galeria{
     gap: 10px;
     max-height: 660px;
 }
-
 div#grid-galeria article:nth-child(1){
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -487,10 +466,9 @@ footer{
     display: flex;
     color: rgb(255,255,255);
     padding: 20px;
-    justify-content: space-around;
+    justify-content:space-around;
 }
 .footer{
-    width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -535,7 +513,6 @@ a:active {
     width: 100%;
     box-sizing: border-box;
 }
-
 /* CSS PAGINA INTERIOR */
 .contenedor-img-inicio-int{
     background-image: url(../images/jpg/img-header.jpg);
@@ -564,7 +541,7 @@ a:active {
 }
 .banner{
     background-color:rgb(248, 30, 3) ;
-    height: 702px;
+    height: 300px;
     font-size: 20px;
     color: rgb(255, 255, 255);
     display: flex;
@@ -582,22 +559,19 @@ a:active {
     flex-direction: column;
     justify-content: center;
 }
-
-
 /* Reproductor */
-
 .reproductor{
     display: flex;
     margin: auto;
     margin-bottom: 30px;
     width: 70%;
 }
-
 /* Galeria */
-article h2 .titulo-galeria{
-    display: flex;
-    text-align: center;
-    
+.titulo-galeria{
+    display: flex; 
+    flex-direction: column;
+	align-items: center;
+    margin-top: 50px;
 }
 #galeriagris{
     display:flex;
@@ -608,19 +582,16 @@ article h2 .titulo-galeria{
     width: 80%;
     margin: auto;
 }
-
 #galeriagris .divcontent{
     width: 20%;
     height: 180px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    
 }
 #galeriagris .divcontent img{
     width: 40px;
     height: 40px;
-    
 }
 #galeriagris .divcontent:nth-child(odd){
     background-color: #808080;
@@ -634,18 +605,14 @@ article h2 .titulo-galeria{
     background-repeat: no-repeat;
     background-position: center;
 }
-
-
 /* Contenido */
-
 .contenido h2{
-display: flex;
-flex-direction: column;
-align-items: center;
-width: 80%;
-padding-top: 3%;
-font-size: 50px;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    padding-top: 3%;
+    font-size: 50px;
 }
 #cajas-negras{
     display:flex;
@@ -654,8 +621,7 @@ font-size: 50px;
     align-items: center;
     justify-content: space-around;
     padding-top: 60px;
-    padding-bottom: 30px;
-    
+    padding-bottom: 30px; 
 }
 #cajas-negras div{
     width: 22%;
@@ -673,7 +639,7 @@ font-size: 50px;
     font-size: 80%;
 }
 #cajas-negras div img{
-margin-left: 5%;
+    margin-left: 5%;
 }
 .main{
     width: 80%;
@@ -689,4 +655,3 @@ margin-left: 5%;
     font-size: 40px;
     font-weight: bold;
 }
-

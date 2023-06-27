@@ -18,6 +18,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 30px;
+        margin-left: 40px;
     }
     .reproductor{
         width: 100%;
@@ -35,11 +37,9 @@
         height: 300px;
         order: 2;
     }
-
     .btnmenu{
         display: block !important;
     }
-    
     #cajas-negras{
         display:flex;
         flex-direction: column;
@@ -54,11 +54,9 @@
         margin: 10px;
         height: 500px;
     }
-
     #cajas-negras div p{
         font-size: 30px;
     }
-
     .fotos-galeria-int{
         display: grid;
         grid-template-columns: repeat(6, 33,33.33vh);
@@ -68,7 +66,6 @@
     #galeriagris .divcontent{
         width: 50%;
     }
-    
     #galeriagris:nth-child(1){
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -89,7 +86,6 @@
         grid-column: 5 / 6;
         grid-row: 1 / 2;
     }
-    
     #galeriagris .divcontent:nth-child(1),
     #galeriagris .divcontent:nth-child(4),
     #galeriagris .divcontent:nth-child(5),
@@ -110,10 +106,40 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+    .wrapper{
+        margin-bottom: 30px;
+    }
+    .logo{
+        font-size: 40px;
+    }
+    .titulo-galeria{
+        margin-top: 80px;
+    }
+    section h2{
+        margin-top: 80px; 
+    }
+     /*Footer*/
+     footer{
+        width: 100%;
+        height: 200px;
+        background-color: rgb(0,0,0);
+        color: rgb(255,255,255);
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+    footer p{
+        text-align: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer{
+        width: 100%;
+    }
     
 }
-
-
 
 /* Dispositivos pequeños (S) (teléfonos en horizontal, 576px hacia arriba) */
 @media (min-width: 576px) {}

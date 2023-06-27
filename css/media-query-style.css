@@ -102,6 +102,12 @@
         flex-direction: column;
         margin-bottom: 30px;
     }
+    .caja1, .caja2{
+        width: 100%;
+    }
+    .contenedor-formato-img-2{
+        margin-bottom: 70px;
+    }
     /*Footer*/
     footer{
         width: 100%;
@@ -120,14 +126,9 @@
         margin-top: 10px;
     }
     .footer{
-        width: 1000%;
+        width: 100%;
     }
-   
 }
-    
-
-
-
 
 /* Dispositivos pequeños (S) (teléfonos en horizontal, 576px hacia arriba) */
 @media (min-width: 576px) {}
